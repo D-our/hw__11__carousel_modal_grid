@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>First_screen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/42a968f827.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container__1">
+        <div class="wrapper">
+            <header class="header">
+                <div class="main__menu">
+                    <nav class="cities">
+                        <div class="primary_nav_wrap">
+                            <nav id="menu" role="navigation">
+                                <div class="menu">
+                                    <ul class="nav menu">
+                                        <li><span class="nav__header">КИЕВ</span>
+                                            <ul class="nav__child">
+                                                <li><a href="#">О школе</a></li>
+                                                <li><a href="#">Предподаватели</a></li>
+                                                <li><a href="#">Стать предподавателем</a></li>
+                                                <li><a href="#">Отзывы</a>
+                                                    <hr>
+                                                </li>
+                                                <li>
+                                                    <span><img class="heart" src="images/heart.svg"
+                                                            alt="heart"></span><a href="#">Проверка сертификата</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">ОДЕССА</a></li>
+                                        <li><a href="#">ДНЕПР</a></li>
+                                        <li><a href="#">ХАРЬКОВ</a></li>
+                                        <li><a class="online" href="#">online</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </nav>
+                    <nav class="contacts">
+                        <img src="images/phone-call.svg" alt="phone">
+                        <a href="#">+38 (093) 543 77 47</a>
+                        <img src="images/email.svg" alt="email">
+                        <a href="#">kyiv@ithillel@gmail.com</a>
+                    </nav>
+                    <nav class="lang">
+                        <a href="">рус</a>
+                        <a href="">укр</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="main">
+                <div class="container__2">
+                    <div class="intro__wrapper">
+                        <section class="intro__inner">
+                            <img class="logo__intro" src="images/logo-intro.svg" alt="logo">
+                            <p>Учись ради мечты!</p>
+                            <hr>
+                            <a href="#" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Засписаться на курс</a>
+                        </section>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="">
+                <div class="regform__header--1 ">
+                    <h2>Заявка на регистрацию</h2>
+                </div>
+                <div class="regform__header--1 ">
+                    <img class="question" src="images\question.svg" alt="">
+                    <p>Оставьте ваши контактные данные,<br> и мы вам обязательно перезвоним!</p>
+                </div>
+            </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="regform__wrapper">
+                <div class="main__2">
+                    <form action="index.html" class="main_form" method="POST">
+                        <div class="revers">
+                            <input type="text" value="" id="name" placeholder="Anna" pattern="^[А-ЯЁа-яё]*$" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="revers">
+                            <input type="email" value="" id="email" placeholder="xxxxxx@mail.com" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                            <label for="name">email</label>
+                        </div>
+                        <div class="revers">
+                            <input type="tel" value="" id="tel" placeholder="+7(___)___-__-__" pattern="[0-9]{,8}" required>
+                            <label for="name">phone</label>
+                        </div>
+                        <div class="revers">
+                            <select name="city" id="city">
+                                <option disabled selected value="" placeholder="choose the course">Choice
+                                </option>
+                                <option value="c1">Kiev</option>
+                                <option value="c2">Kharkiv</option>
+                                <option value="c3">Odessa</option>
+                            </select>
+                            <label for="name">City</label>
+                        </div>
+            
+                        <div class="revers">
+                            <select name="course" id="course">
+                                <option disabled selected value="" placeholder="choose the course">Choice
+                                </option>
+                                <option value="course_1" placeholder="choose the course">Front-End</option>
+                                <option value="course_2" placeholder="choose the course">Front-End</option>
+                                <option value="course_3" placeholder="choose the course">Front-End</option>
+                            </select>
+                            <label for="name">Course</label>
+                        </div>
+                        <div class="btn_buttom">
+                            <button class="btn__2" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+                        <section class="map">
+                            <span class="map__inner">
+                                <img src="images/map__ukraine.svg" alt="map">
+                                <a class="map__city__kiev" href="">
+                                    <div class="map__city">
+                                        <p>Киев</p>
+                                        <img src="images/map-location.svg" alt="">
+                                    </div>
+                                </a>
+                                <a class="map__city__kharkiv" href="">
+                                    <div class="map__city">
+                                        <p>Харьков</p>
+                                        <img src="images/map-location.svg" alt="">
+                                    </div>
+                                </a>
+                                <a class="map__city__dnepr" href="">
+                                    <div class="map__city">
+                                        <p>Днепр</p>
+                                        <img src="images/map-location.svg" alt="">
+                                    </div>
+                                </a>
+                                <a class="map__city__odessa" href="">
+                                    <div class="map__city">
+                                        <p>Одесса</p>
+                                        <img src="images/map-location.svg" alt="">
+                                    </div>
+                                </a>
+                            </span>
+                        </section>
+                    </div>
+                    <section class="statistics">
+                        <div class="statistics__1">
+                            <div class="inline__wrapper__1">
+                                <div class="inline__img">
+                                    <img class="amount__icon" src="images/first__screen/icon-shuttle.svg" alt="#">
+                                </div>
+                                <div class="inline">
+
+                                    <p class="green"><span>12000</span></p>
+                                    <p class="plus"><span>+</span></p>
+                                    <p class="six"><span>Выпускников<br>Школы</span></p>
+                                </div>
+                            </div>
+                            <div class="inline__wrapper__1">
+                                <div class="inline__img">
+                                    <img class="amount__icon" src="images/first__screen/icon-shuttle.svg" alt="#">
+                                </div>
+                                <div class="inline">
+                                    <p class="green">12000</p>
+                                    <p class="six">Выпускников школы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistics__wrapper__3">
+                            <div class="inline__wrapper__3">
+                                <div class="inline__3"><img src="images/first__screen/icon-age.svg" alt=""></div>
+                                <div class="inline__3">
+                                    <p class="green__1">7<span class="year">лет</span></p>
+                                    <p>Школа предоставляет<br>образовательные услуги</p>
+                                </div>
+                            </div>
+                            <div class="inline__wrapper__3">
+                                <div class="inline__3"><img src="images/first__screen/icon-visitors.svg" alt=""></div>
+                                <div class="inline__3">
+                                    <p class="green__1">3500<span class="plus_2">+</span></p>
+                                    <p>человек в день посещают сайт школы</p>
+                                </div>
+                            </div>
+                            <div class="inline__wrapper__3">
+                                <div class="inline__3"><img src="images/first__screen/icon-cities.svg" alt=""></div>
+                                <div class="inline__3">
+                                    <p class="green__1">4<span class="year">города</span></p>
+                                    <p>Киев, Одесса, Днепр, Харьков</p>
+                                </div>
+                            </div>
+                            <div class="inline__wrapper__3">
+                                <div class="inline__3"><img src="images/first__screen/icon-coaches.svg" alt=""></div>
+                                <div class="inline__3">
+                                    <p class="green__1">200<span class="plus_2">+</span></p>
+                                    <p>преподавателей-практиков</p>
+                                </div>
+                            </div>
+                            <div class="inline__wrapper__3">
+                                <div class="inline__3"><img src="images/first__screen/icon-employment.svg" alt=""></div>
+                                <div class="inline__3">
+                                    <p class="green__1">43<span class="year">%</span></p>
+                                    <p>трудоустроенных студентов</p>
+                                </div>
+                            </div>
+
+                            <div class="inline__wrapper__3">
+                                <div class="inline__3"><img src="images/first__screen/icon-salary.svg" alt=""></div>
+                                <div class="inline__3">
+                                    <p class="green__1">21600<span class="year">грн/мес</span></p>
+                                    <p>со старта составила рекордная<br>зарплата Выпускника</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+  
+
+
+
+
+        <div class="carousel__slide">
+            <h1>Отзывы Выпускников Школы</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="width__slide ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam accusantium quo sed ipsam soluta cupiditate velit illo, sequi recusandae maxime omnis ut iusto, eveniet consequatur fugit perferendis atque! Nisi!
+                                Quia voluptas sunt voluptatem accusamus libero, non facilis debitis, quae nisi voluptate fuga itaque quod ipsam dolorem laborum dicta delectus placeat? Illum nesciunt modi quidem suscipit labore non dolores debitis! Dicta
+                                officiis natus molestiae est alias distinctio consequatur! Veniam excepturi ab nisi similique possimus cum, cumque iste eum voluptatum aliquid?</p>
+                            <div class="photo__buttom">
+
+                                <div class="photo__buttom__bg"></div>
+                                <a href="" class="oleg">Oleg</a>
+
+                                <span class="s_1"></span>
+
+                                <div class="stars">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam accusantium quo sed ipsam soluta cupiditate velit illo, sequi recusandae maxime omnis ut iusto, eveniet consequatur fugit perferendis atque! Nisi!
+                                Quia voluptas sunt voluptatem accusamus libero, non facilis debitis, quae nisi voluptate fuga itaque quod ipsam dolorem laborum dicta delectus placeat?</p>
+                            <div class="photo__buttom">
+
+                                <div class="photo__buttom__bg"></div>
+                                <a href="" class="oleg">Oleg</a>
+
+                                <span class="s_1"></span>
+
+                                <div class="stars">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus laboriosam accusantium quo sed ipsam soluta cupiditate velit illo, sequi recusandae maxime omnis ut iusto, eveniet consequatur fugit perferendis atque!</p>
+                            <div class="photo__buttom">
+
+
+
+                                <div class="photo__buttom__bg"></div>
+                                <a href="" class="oleg">Oleg</a>
+                                <span class="s_1"></span>
+
+                                <div class="stars">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <div class="border__prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                            < </span>
+                        <span class="sr-only">Previous</span>
+                    </div>
+
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <div class="border__next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">></span>
+                        <span class="sr-only">Next</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script>
+            $('#carouselExampleIndicators').carousel({
+                // interval: 2000,
+                keyboard: true,
+                pause: true
+            });
+        </script>
+</body>
+
+</html>
